@@ -25,4 +25,24 @@ jobs:
           pip install -r ./requirements.txt
 
       - name: Start Backend Server
-        run: uvicorn main:app --reload &
+        run: uvicorn app.main:app --reload &
+
+  fastapi-run-test:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+
+      - name: Install Backend Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r ./requirements.txt
+
+      - name: Start Backend Server
+        run: uvicorn app.test_main:app --reload &
