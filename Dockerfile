@@ -1,5 +1,5 @@
 # Start with the FastAPI base image
-FROM python3.9
+FROM python:3.9
 WORKDIR /app
 COPY . /app
 RUN pip install --no-cache-dir firebase-admin pydantic
