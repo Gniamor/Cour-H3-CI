@@ -1,4 +1,4 @@
-
+[![Publish Docker image](https://github.com/Gniamor/Cour-H3-CI/actions/workflows/push-docker.yml/badge.svg)](https://github.com/Gniamor/Cour-H3-CI/actions/workflows/push-docker.yml)
 ---
 
 # Cour-H3-CI
