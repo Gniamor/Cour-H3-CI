@@ -2,7 +2,7 @@
 FROM python:3.9
 WORKDIR /app
 COPY . /app
-RUN pip install --no-cache-dir firebase-admin pydantic
+RUN pip install -r requirements.txt
 EXPOSE 8001
 #COPY .env /app
 # Set environment variables from .env file
